@@ -3,14 +3,15 @@ import { useFonts } from "expo-font";
 import { Slot } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { Platform, Text, View } from "react-native";
-import * as NavigationBar from 'expo-navigation-bar';
+import { Text, View } from "react-native";
 
-const isAndroid = Platform.OS ==="android";
 
-if(isAndroid){
-  NavigationBar.setBackgroundColorAsync("black")
-}
+//VERIFICACION DE QUE PLATAFORMA ES 
+// const isAndroid = Platform.OS ==="android";
+
+// if(isAndroid){
+//   NavigationBar.setBackgroundColorAsync("black")
+// }
 const RootLayout = () => {
 
   const [loaded] = useFonts({
